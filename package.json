@@ -1,0 +1,15 @@
+{
+  "name": "language-wh-henri",
+  "version": "0.0.0",
+  "description": "Syntax highlighting for WH (Henri) files used internally within Vaadin Ltd.",
+  "activationCommands": {
+    "atom-workspace": "language-wh-henri:toggle"
+  },
+  "repository": "https://github.com/tehapo/atom-language-wh-henri",
+  "license": "Apache-2.0",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

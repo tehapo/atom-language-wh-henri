@@ -1,0 +1,71 @@
+{
+    "scopeName": "source.wh.txt",
+    "name": "WH (Henri)",
+    "fileTypes": [
+        "wh",
+        "wh.txt"
+    ],
+    "patterns": [
+        {
+            "comment": "Project map start/end line",
+            "match": "^# PROJECT MAP (START|END)$",
+            "name": "entity.project.map"
+        },
+        {
+            "comment": "Comment line",
+            "match": "^#.*$",
+            "name": "comment.line"
+        },
+        {
+            "comment": "Project map entry line",
+            "match": "^(.*)(=)(.*)$",
+            "captures": {
+                "1": {
+                    "name": "variable.project.name"
+                },
+                "2": {
+                    "name": "punctuation.separator"
+                },
+                "3": {
+                    "name": "constant.numeric"
+                }
+            }
+        },
+        {
+            "comment": "WH entry line",
+            "match": "^(- )(.*)(: )(.*?)([0-9\\.]+)(h)$",
+            "captures": {
+                "1": {
+                    "name": "punctuation.separator"
+                },
+                "2": {
+                    "name": "entity.project.name"
+                },
+                "3": {
+                    "name": "punctuation.separator"
+                },
+                "4": {
+                    "name": "support.hours.description"
+                },
+                "5": {
+                    "name": "constant.numeric.hours"
+                },
+                "6": {
+                    "name": "punctuation.separator"
+                }
+            }
+        },
+        {
+            "comment": "Date line",
+            "match": "^(\\*)(.*)$",
+            "captures": {
+                "1": {
+                    "name": "punctuation.separator"
+                },
+                "2": {
+                    "name": "storage.date"
+                }
+            }
+        }
+    ]
+}
