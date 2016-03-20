@@ -1,7 +1,7 @@
 {
   "name": "language-wh-henri",
   "main": "./lib/wh-status.js",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Syntax highlighting for WH (Henri) files used internally within Vaadin Ltd.",
   "repository": "https://github.com/tehapo/atom-language-wh-henri",
   "license": "Apache-2.0",
